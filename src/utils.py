@@ -39,6 +39,14 @@ def path2gt_datasets(path, dataset):
     """ Given the audio path, it returns the ground truth label.
         Define HERE a new dataset to employ this code with other data.
     """
+    if dataset == "Xiphorhynchus_guttatus_vs_elegans":
+
+        if path.startswith("Xiphorhynchus_guttatus/"):
+            return 0
+
+        if path.startswith("Xiphorhynchus_elegans/"):
+            return 1
+
     if dataset == 'GTZAN':
         if 'blues' in path:
             return 0
