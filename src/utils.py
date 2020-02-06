@@ -39,13 +39,46 @@ def path2gt_datasets(path, dataset):
     """ Given the audio path, it returns the ground truth label.
         Define HERE a new dataset to employ this code with other data.
     """
-    if dataset == "Xiphorhynchus_guttatus_vs_elegans":
+    if dataset == "Xiphorhynchus":
 
-        if path.startswith("Xiphorhynchus_guttatus/"):
+        if path.startswith("Xiphorhynchus_chunchotambo/"):
             return 0
 
         if path.startswith("Xiphorhynchus_elegans/"):
             return 1
+
+        if path.startswith("Xiphorhynchus_erythropygius/"):
+            return 2
+
+        if path.startswith("Xiphorhynchus_flavigaster/"):
+            return 3
+
+        if path.startswith("Xiphorhynchus_fuscus/"):
+            return 4
+
+        if path.startswith("Xiphorhynchus_guttatus/"):
+            return 5
+
+        if path.startswith("Xiphorhynchus_lachrymosus/"):
+            return 6
+
+        if path.startswith("Xiphorhynchus_obsoletus/"):
+            return 7
+
+        if path.startswith("Xiphorhynchus_ocellatus/"):
+            return 8
+
+        if path.startswith("Xiphorhynchus_pardalotus/"):
+            return 9
+
+        if path.startswith("Xiphorhynchus_spixii/"):
+            return 10
+
+        if path.startswith("Xiphorhynchus_susurrans/"):
+            return 11
+
+        if path.startswith("Xiphorhynchus_triangularis/"):
+            return 12
 
     if dataset == 'GTZAN':
         if 'blues' in path:

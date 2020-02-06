@@ -29,16 +29,16 @@ except:
 
 DATA_FOLDER = '../data/'
 config = {
-    'audio_folder': '/Users/dan/src/3p/sklearn-audio-transfer-learning/data/audio/Xiphorhynchus_guttatus_vs_elegans/',
-    'audio_paths_test': '/Users/dan/src/3p/sklearn-audio-transfer-learning/data/index/Xiphorhynchus_guttatus_vs_elegans/test.txt',
-    'audio_paths_train': '/Users/dan/src/3p/sklearn-audio-transfer-learning/data/index/Xiphorhynchus_guttatus_vs_elegans/train.txt',
+    'audio_folder': '/Users/dan/src/3p/sklearn-audio-transfer-learning/data/audio/Xiphorhynchus/',
+    'audio_paths_test': '/Users/dan/src/3p/sklearn-audio-transfer-learning/data/index/Xiphorhynchus/test.txt',
+    'audio_paths_train': '/Users/dan/src/3p/sklearn-audio-transfer-learning/data/index/Xiphorhynchus/train.txt',
     'batch_size': 8,
-    'dataset': 'Xiphorhynchus_guttatus_vs_elegans',
+    'dataset': 'Xiphorhynchus',
     'features_type': 'vggish',
     'load_evaluation_data': False,
     'load_training_data': False,
     'model_type': 'SVM',
-    'num_classes_dataset': 2,
+    'num_classes_dataset': 13,
     'pca': 128
 }
 
